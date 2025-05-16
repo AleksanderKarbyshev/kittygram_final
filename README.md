@@ -1,26 +1,43 @@
-#  Как работать с репозиторием финального задания
+# Проект "Kittygram"
 
-## Что нужно сделать
+[ознакомиться с проектом](https://infrasprint1trial.myvnc.com/signin) 
 
-Настроить запуск проекта Kittygram в контейнерах и CI/CD с помощью GitHub Actions
+![workflow](https://github.com/AleksanderKarbyshev/kittygram_final/actions/workflows/main.yml/badge.svg)
 
-## Как проверить работу с помощью автотестов
+Теперь не только вы, но и ваша пушистая булочка может выкладывать красивые и смешные фоточки.
 
-В корне репозитория создайте файл tests.yml со следующим содержимым:
-```yaml
-repo_owner: ваш_логин_на_гитхабе
-kittygram_domain: полная ссылка (https://доменное_имя) на ваш проект Kittygram
-taski_domain: полная ссылка (https://доменное_имя) на ваш проект Taski
-dockerhub_username: ваш_логин_на_докерхабе
-```
+Основные возможности kittygram:
 
-Скопируйте содержимое файла `.github/workflows/main.yml` в файл `kittygram_workflow.yml` в корневой директории проекта.
+- публикация вашего пушистого господина (госпожи) отдельным постом;
+- автоматический деплой проекта на сервер;
+- подключение к `api`.
 
-Для локального запуска тестов создайте виртуальное окружение, установите в него зависимости из backend/requirements.txt и запустите в корневой директории проекта `pytest`.
+Данный проект был реализован для понимания принципов работы и получения практических навыков:
 
-## Чек-лист для проверки перед отправкой задания
+- `Docker`;
+- `Workflows`;
+- `CI/CD`;
+- `GitHub Actions`;
+- `Secret Actions GitHub`.
 
-- Проект Taski доступен по доменному имени, указанному в `tests.yml`.
-- Проект Kittygram доступен по доменному имени, указанному в `tests.yml`.
-- Пуш в ветку main запускает тестирование и деплой Kittygram, а после успешного деплоя вам приходит сообщение в телеграм.
-- В корне проекта есть файл `kittygram_workflow.yml`.
+<br>
+
+## Стек:
+- [Python 3.9](https://docs.python.org/release/3.9/);
+- [Django 3.2.3](https://docs.djangoproject.com/en/3.2.3/);
+- [Django REST Framework 3.12.4](https://www.django-rest-framework.org/topics/documenting-your-api/);
+- [Gunicorn 20.1.0](https://pypi.org/project/gunicorn/20.1.0/).
+
+<br>
+
+[Руководство по развёртыванию проекта](./Setup.md)
+
+<br>
+
+## Best team:
+
+[GitHub](https://github.com/yandex-praktikum) | Автор проекта - Yandex Practicum
+
+[GitHub](https://github.com/AleksanderKarbyshev) | Разработчик - Aleksander Karbyshev
+
+[GitHub](https://github.com/ritisbarauskas) | Ревьюер - Ritis Barauskas
