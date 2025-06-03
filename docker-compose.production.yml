@@ -20,6 +20,8 @@ services:
       - media_volume:/media
     depends_on:
       - db
+    environment:
+      - SECRET_KEY=${SECRET_KEY}
 
   frontend:
     image: kotsborodoy/kittygram_frontend
