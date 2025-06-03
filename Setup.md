@@ -87,7 +87,7 @@ TELEGRAM_TOKEN
 
 При `push` автоматически отрабатывают сценарии:
 
-+ `Tests 3.9, 3.10, 3.11` - проверка кода на соответствие стандарта PEP8;
++ `Tests 3.9` - проверка кода на соответствие стандарта PEP8;
 + `Push Docker image to DockerHub`, `Push gateway Docker image to DockerHub`, `Push frontend Docker image to DockerHub` - сборка и доставка докер-образов на DockerHub;
 + `Deploy` - автоматический деплой проекта на ваш сервер;
 + `Send message` - отправка уведомления в Telegram.
